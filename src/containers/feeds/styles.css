@@ -1,0 +1,28 @@
+.itemsList {
+    display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-gap: 30px;
+	max-width: 900px;
+	margin: 0 auto;
+    padding: 20px;
+}
+	
+@media screen and (max-width: 830px) {
+    .itemsList {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    
+    a {
+        font-size: 1.2rem;
+    }
+}
+	
+@media screen and (max-width: 500px) {
+    .itemsList {
+        grid-template-columns: 1fr;
+        grid-gap: 0%;
+        padding: 20px;
+    }
+}
